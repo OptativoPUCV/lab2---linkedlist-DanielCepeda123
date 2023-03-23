@@ -103,3 +103,19 @@ list.c:43:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 82bbae2
+Thu 23 Mar 2023 01:07:10 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:12: error: ‘primer’ undeclared (first use in this function); did you mean ‘primero’?
+   42 |     return primer->data;
+      |            ^~~~~~
+      |            primero
+list.c:42:12: note: each undeclared identifier is reported only once for each function it appears in
+list.c:43:1: error: control reaches end of non-void function [-Werror=return-type]
+   43 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+48f5711
