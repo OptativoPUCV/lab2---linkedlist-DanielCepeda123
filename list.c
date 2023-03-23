@@ -43,7 +43,6 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-  if (!list->current->next) return NULL;
   Node *aux = list->current->next;
   list->current = list->current->next;
     return (aux->next->data);
@@ -56,7 +55,6 @@ void * lastList(List * list) {
 }
 
 void * prevList(List * list) {
-  if (!list->current->prev) return NULL;
   list->current = list->current->prev;
     return (list->current->data);
 }
