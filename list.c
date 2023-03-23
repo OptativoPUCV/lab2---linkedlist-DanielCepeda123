@@ -28,8 +28,9 @@ Node * createNode(void * data) {
     return new;
 }
 
-List * createList() {
-     return NULL;
+List * createList(List *movies) {
+  movies = NULL;
+     return movies;
 }
 
 void * firstList(List * list) {
