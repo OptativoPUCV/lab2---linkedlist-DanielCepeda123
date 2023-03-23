@@ -579,3 +579,14 @@ Thu 23 Mar 2023 10:37:24 PM UTC:
  tests:  10|2
 total_score: 45/70
 8938a74
+Thu 23 Mar 2023 11:00:47 PM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:95:9: error: unused variable ‘next’ [-Werror=unused-variable]
+   95 |   Node *next = list->current->next;
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1d18389
