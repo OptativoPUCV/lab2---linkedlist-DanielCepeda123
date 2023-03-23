@@ -397,3 +397,14 @@ Thu 23 Mar 2023 03:44:36 PM UTC:
  tests:  9|3
 total_score: 35/70
 790dff0
+Thu 23 Mar 2023 03:52:41 PM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:67:9: error: variable ‘nodoParaInicio’ set but not used [-Werror=unused-but-set-variable]
+   67 |   Node *nodoParaInicio = createNode(data);
+      |         ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b9be160
