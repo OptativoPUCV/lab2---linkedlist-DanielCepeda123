@@ -176,3 +176,13 @@ list.c:48:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 7e52c70
+Thu 23 Mar 2023 01:14:08 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:41:19: error: incompatible types when assigning to type ‘Node *’ from type ‘Node’
+   41 |   list->current = *primero;
+      |                   ^
+Compilation failed
+f81f1a9
