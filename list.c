@@ -50,13 +50,13 @@ void * nextList(List * list) {
 }
 
 void * lastList(List * list) {
-  //Node *aux = list->tail;
-  list->current = list->tail;
+  
+  //list->current = list->tail;
     return list->current->data;
 }
 
 void * prevList(List * list) {
-  list->current = list->current->prev;
+  //list->current = list->current->prev;
     return list->current->data;
 }
 
