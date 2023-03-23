@@ -39,7 +39,7 @@ List * createList() {
 void * firstList(List * list) {
   Node *primero = list->head;
   list->current = primero;
-    return primer->data;
+    return primero->data;
 }
 
 void * nextList(List * list) {
