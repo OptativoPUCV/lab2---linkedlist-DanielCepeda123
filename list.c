@@ -77,7 +77,8 @@ void pushBack(List * list, void * data) {
 }
 
 void pushCurrent(List * list, void * data) {
-  //Node *aux = list->current->next;
+  list->current->next->data = data;
+  
 }
 
 void * popFront(List * list) {
