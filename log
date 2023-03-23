@@ -30,3 +30,16 @@ Thu 23 Mar 2023 03:54:36 AM UTC:
  tests:  0|6
 total_score: 0/70
 3cd59e9
+Thu 23 Mar 2023 11:17:59 AM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:33:9: error: redefinition of ‘movies’
+   33 |   List *movies = NULL;
+      |         ^~~~~~
+list.c:32:9: note: previous definition of ‘movies’ with type ‘List *’ {aka ‘struct List *’}
+   32 |   List *movies = (List *) malloc (sizeof(List));
+      |         ^~~~~~
+Compilation failed
+536eb38
