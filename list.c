@@ -32,7 +32,7 @@ List * createList() {
   List *movies = (List *) malloc (sizeof(List));
   movies->head = NULL;
   movies->tail = NULL;
-  movies->current =NULL;
+  movies->current = NULL;
      return movies;
 }
 
@@ -64,6 +64,7 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
+  if (list == NULL) return NULL;
   if(list->head == NULL) return;
   Node *nodoParaInicio = createNode(data);
   nodoParaInicio->next = list->head;
