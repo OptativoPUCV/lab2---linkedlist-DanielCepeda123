@@ -414,3 +414,9 @@ Thu 23 Mar 2023 03:54:27 PM UTC:
  tests:  9|3
 total_score: 35/70
 5c5d526
+Thu 23 Mar 2023 03:58:45 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  6|4
+total_score: 25/70
+bdad66d

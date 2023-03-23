@@ -45,9 +45,9 @@ void * firstList(List * list) {
 void * nextList(List * list) {
   if (list->current == NULL) return NULL;
   if (list->current->next == NULL) return NULL;
-  Node *aux = list->current;
+  //Node *aux = list->current;
   list->current = list->current->next;
-    return (aux->next->data);
+    return (list->current->next->data);
 }
 
 void * lastList(List * list) {
@@ -66,6 +66,7 @@ void * prevList(List * list) {
 void pushFront(List * list, void * data) {
   Node *nodoParaInicio = createNode(data);
   nodoParaInicio->next = list->head;
+  
   
 }
 
