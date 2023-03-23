@@ -65,14 +65,14 @@ void * prevList(List * list) {
 
 void pushFront(List * list, void * data) {
   Node *nodoParaInicio = createNode(data);
-  if (list == NULL)
+  if (list->head == NULL)
   {
     list->head = nodoParaInicio; 
   }
   else
   {
     nodoParaInicio->next = list->head;
-  list->head->prev = nodoParaInicio;
+    list->head->prev = nodoParaInicio;
   }
   
 }
