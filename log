@@ -54,3 +54,9 @@ list.c:33:18: error: ‘null’ undeclared (first use in this function)
 list.c:33:18: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 ba9d270
+Thu 23 Mar 2023 12:19:26 PM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+b4fd649
