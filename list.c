@@ -117,8 +117,8 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-  Node *datoEliminado = list->current->data;
-    return NULL;
+  Node *datoEliminado = list->current;
+    return (datoEliminado->data);
 }
 
 void cleanList(List * list) {
