@@ -31,8 +31,8 @@ Node * createNode(void * data) {
 List * createList() {
   List *movies = (List *) malloc (sizeof(List));
   movies->head = NULL;
-  //movies->tail = NULL;
-  //movies->current =NULL;
+  movies->tail = NULL;
+  movies->current =NULL;
      return movies;
 }
 
