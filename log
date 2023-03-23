@@ -259,3 +259,14 @@ Thu 23 Mar 2023 02:33:20 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 d6a75d8
+Thu 23 Mar 2023 02:34:38 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:46:36: error: ‘null’ undeclared (first use in this function)
+   46 |   if (!list->current->next) return null;
+      |                                    ^~~~
+list.c:46:36: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+fe77e53
