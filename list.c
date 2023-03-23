@@ -77,7 +77,7 @@ void pushBack(List * list, void * data) {
 }
 
 void pushCurrent(List * list, void * data) {
-  //Node *aux = list->current;
+  Node *aux = createNode(data);
   
 }
 
