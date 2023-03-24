@@ -124,8 +124,10 @@ void * popCurrent(List * list) {
     list->current = list->current->next;
     list->head = list->current;
     list->current->prev = NULL;
-
-    
+  }
+  else
+  {
+    list->current = datoEliminado->next;
   }
   
   return (datoEliminado->data);
