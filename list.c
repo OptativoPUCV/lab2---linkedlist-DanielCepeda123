@@ -118,7 +118,7 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
 
-  list->head = firstList(list);
+  list->head = firstList(&list);
   
   return NULL;
 }
