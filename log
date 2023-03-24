@@ -1045,3 +1045,14 @@ list.c:122:9: error: variable ‘nodoNextAlEliminado’ set but not used [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 57d1b7d
+Fri 24 Mar 2023 04:56:59 AM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:122:9: error: variable ‘nodoNextAlEliminado’ set but not used [-Werror=unused-but-set-variable]
+  122 |   Node *nodoNextAlEliminado = list->current->next;
+      |         ^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d771c88
