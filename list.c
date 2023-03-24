@@ -121,7 +121,7 @@ void * popCurrent(List * list) {
   Node *nodoPrevioAlEliminado = list->current->prev;
   Node *nodoNextAlEliminado = list->current->next;
 
-  return NULL;
+  return (nodoEliminado->data);
 }
 
 void cleanList(List * list) {
