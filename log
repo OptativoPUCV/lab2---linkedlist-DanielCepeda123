@@ -1097,3 +1097,14 @@ list.c:121:9: error: unused variable ‘nodoPrevioAlEliminado’ [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 eb64c4f
+Fri 24 Mar 2023 05:04:46 AM UTC: 
+ list.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:121:9: error: unused variable ‘nodoPrevioAlEliminado’ [-Werror=unused-variable]
+  121 |   Node *nodoPrevioAlEliminado = list->current->prev;
+      |         ^~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+37ebfb4
