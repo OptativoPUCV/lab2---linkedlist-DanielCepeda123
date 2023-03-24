@@ -127,7 +127,7 @@ void * popCurrent(List * list) {
   }
   else
   {
-    list->head = list->next;
+    list->head = list->current->next;
   }
 
   return (nodoEliminado->data);
