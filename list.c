@@ -118,18 +118,30 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
 
-  
-  if (list->current == list->head)
+  Node *nodoAEliminar = list->current;
+
+  if (nodoAEliminar->prev != NULL)
   {
-    Node *aux = list->head;
-    list->head = list->head->next;
-    //list->head->prev = NULL;
-    list->current = list->head;
-    free(aux);
-    //list->head->prev = NULL;
+    nodoAEliminar->prev->next = nodoAEliminar->next;
+  }
+  else list->head = nodoAEliminar->next;
+
+  if (nodoAEliminar->next != NULL)
+  {
+    nodoAEliminar->next->prev = nodoAEliminar->prev;
+  }
+  
+  //if (list->current == list->head)
+//  {
+//    Node *aux = list->head;
+//    list->head = list->head->next;
+//    //list->head->prev = NULL;
+//    list->current = list->head;
+//    free(aux);
+//    //list->head->prev = NULL;
 
     
-  }
+//  }
   //  else
  // {
 //     if (list->current != list->tail){
