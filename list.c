@@ -136,7 +136,7 @@ void * popCurrent(List * list) {
       }
   }
 
-  free(list->current);
+  //free(list->current);
 
   return (nodoAEliminar->data);
 }
