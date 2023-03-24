@@ -124,6 +124,7 @@ void * popCurrent(List * list) {
   {
     list->current = datoEliminado->next;
     list->head = list->current;
+    list->head->prev = NULL;
   }
   else
   {
