@@ -904,3 +904,14 @@ Fri 24 Mar 2023 03:17:26 AM UTC:
  tests:  11|1
 total_score: 55/70
 a15123b
+Fri 24 Mar 2023 03:22:17 AM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:122:9: error: unused variable ‘aux’ [-Werror=unused-variable]
+  122 |   Node *aux = list->current->next;
+      |         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+9613f62
