@@ -128,12 +128,12 @@ void * popCurrent(List * list) {
   else
   {
     list->head = list->current->next;
+     if (list->current->next != NULL)
+    {
+    nodoNextAlEliminado = list->current->prev;
+    }
   }
 
-  if (list->current->next != NULL)
-  {
-    nodoNextAlEliminado = list->current->prev;
-  }
 
   return (nodoEliminado->data);
 }
