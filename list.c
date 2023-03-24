@@ -120,9 +120,14 @@ void * popCurrent(List * list) {
   
   Node *datoEliminado = list->current;
 
-  Node *aux = list->current->prev;
+  Node *aux = list->head;
+  while (aux->next != list->current)
+    {
+      aux = aux->next;
+    }
   aux->next = list->current->next;
   free(list->current);
+  list->current = list->head;
   
   return (datoEliminado->data);
 }
