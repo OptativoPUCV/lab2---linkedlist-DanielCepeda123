@@ -120,7 +120,7 @@ void * popCurrent(List * list) {
   
   Node *datoEliminado = list->current;
   
-  free(list->current);
+  //free(list->current);
   
   return (datoEliminado->data);
 }
