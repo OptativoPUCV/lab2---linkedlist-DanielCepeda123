@@ -1023,3 +1023,14 @@ list.c:122:9: error: unused variable ‘nodoNextAlEliminado’ [-Werror=unused-v
 cc1: all warnings being treated as errors
 Compilation failed
 f1fb3f9
+Fri 24 Mar 2023 04:54:44 AM UTC: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:122:9: error: variable ‘nodoNextAlEliminado’ set but not used [-Werror=unused-but-set-variable]
+  122 |   Node *nodoNextAlEliminado = list->current->next;
+      |         ^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b1bee75

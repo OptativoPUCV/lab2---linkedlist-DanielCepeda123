@@ -130,6 +130,11 @@ void * popCurrent(List * list) {
     list->head = list->current->next;
   }
 
+  if (list->current->next != NULL)
+  {
+    nodoNextAlEliminado = list->current->prev;
+  }
+
   return (nodoEliminado->data);
 }
 
