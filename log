@@ -745,3 +745,14 @@ list.c:123:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attr
 list.c:123:12: error: expected expression before ‘->’ token
 Compilation failed
 be0162b
+Fri 24 Mar 2023 01:05:39 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:123:9: error: unused variable ‘aux’ [-Werror=unused-variable]
+  123 |   Node *aux;
+      |         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+e02eb15
