@@ -117,22 +117,11 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-  Node *datoEliminado = list->current;
+  Node *nodoEliminado = list->current;
+  Node *nodoPrevioAlEliminado = list->current->prev;
+  Node *nodoNextAlEliminado = list->current->next;
 
-  if (list->current == list->head)
-  {
-    list->current = list->current->next;
-    list->head = list->current;
-    list->current->prev = NULL;
-  }
-  else
-  {
-    list->current = datoEliminado->next;
-  }
-
-  //free(list->current);
-  
-  return (datoEliminado->data);
+  return NULL;
 }
 
 void cleanList(List * list) {
