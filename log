@@ -756,3 +756,14 @@ list.c:123:9: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e02eb15
+Fri 24 Mar 2023 01:06:14 AM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+test.c: In function ‘popCurrent’:
+list.c:124:13: error: ‘aux’ is used uninitialized [-Werror=uninitialized]
+  124 |   aux->next = list->current->next;
+      |   ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8e64520
