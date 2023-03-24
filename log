@@ -998,3 +998,17 @@ list.c:121:9: error: unused variable ‘nodoPrevioAlEliminado’ [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 63aa5cf
+Fri 24 Mar 2023 04:52:00 AM UTC: 
+ list.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:130:22: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+  130 |     list->head = list->next;
+      |                      ^~
+list.c:122:9: error: unused variable ‘nodoNextAlEliminado’ [-Werror=unused-variable]
+  122 |   Node *nodoNextAlEliminado = list->current->next;
+      |         ^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bbe241b
