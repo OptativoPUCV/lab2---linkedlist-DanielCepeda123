@@ -123,7 +123,7 @@ void * popCurrent(List * list) {
 
   if(list->current == list->head)
   {
-    free(list->current);
+    //free(list->current);
     list->current = nodoNextAlEliminado;
     list->head = nodoNextAlEliminado;
     list->current->prev = NULL;
