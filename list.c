@@ -154,7 +154,7 @@ void * popCurrent(List * list) {
        
  //    } 
 
-  return NULL;
+  return (nodoAEliminar->data);
     
   }
   
