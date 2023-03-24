@@ -1083,3 +1083,17 @@ list.c:138:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 841262e
+Fri 24 Mar 2023 05:01:56 AM UTC: 
+ list.c | 14 +-------------
+ 1 file changed, 1 insertion(+), 13 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:122:9: error: unused variable ‘nodoNextAlEliminado’ [-Werror=unused-variable]
+  122 |   Node *nodoNextAlEliminado = list->current->next;
+      |         ^~~~~~~~~~~~~~~~~~~
+list.c:121:9: error: unused variable ‘nodoPrevioAlEliminado’ [-Werror=unused-variable]
+  121 |   Node *nodoPrevioAlEliminado = list->current->prev;
+      |         ^~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+eb64c4f
