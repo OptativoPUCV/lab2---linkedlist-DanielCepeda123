@@ -1056,3 +1056,8 @@ list.c:122:9: error: variable ‘nodoNextAlEliminado’ set but not used [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 d771c88
+Fri 24 Mar 2023 04:58:48 AM UTC: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+ tests:  0|0
+aa400cd
