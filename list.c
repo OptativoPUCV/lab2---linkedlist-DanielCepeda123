@@ -119,7 +119,7 @@ void * popBack(List * list) {
 void * popCurrent(List * list) {
   Node *datoEliminado = list->current;
 
-  Node *aux = list->current->next;
+  //Node *aux = list->current->next;
   
   if (list->current == list->head)
   {
