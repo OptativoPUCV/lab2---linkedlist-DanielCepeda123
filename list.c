@@ -133,29 +133,6 @@ void * popCurrent(List * list) {
   {
     list->tail = nodoAEliminar->prev;
   }
-  
-  //if (list->current == list->head)
-//  {
-//    Node *aux = list->head;
-//    list->head = list->head->next;
-//    //list->head->prev = NULL;
-//    list->current = list->head;
-//    free(aux);
-//    //list->head->prev = NULL;
-
-    
-//  }
-  //  else
- // {
-//     if (list->current != list->tail){
- //      aux = list->current->prev;
-  //     aux->next = list->current->next;
-  //     list->current->next->prev = aux;
- //    }
- //   else
-//     {
-       
- //    } 
 
   return (nodoAEliminar->data);
     
