@@ -117,7 +117,7 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-  Node *nodoEliminado = list->current;
+  Node *nodoAEliminar = list->current;
   Node *nodoPrevioAlEliminado = list->current->prev;
   Node *nodoNextAlEliminado = list->current->next;
 
@@ -133,12 +133,6 @@ void * popCurrent(List * list) {
     nodoNextAlEliminado = list->current->prev;
     }
   }
-
-  free(list->current);
-
-  list->current = nodoEliminado->next;
-  list->current->prev = nodoPrevioAlEliminado;
-  list->current->next = nodoNextAlEliminado;
 
   return (nodoEliminado->data);
 }
