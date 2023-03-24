@@ -119,6 +119,7 @@ void * popBack(List * list) {
 void * popCurrent(List * list) {
 
   list->head->data = firstList(list);
+  list->head->prev = NULL;
   
   return NULL;
 }
