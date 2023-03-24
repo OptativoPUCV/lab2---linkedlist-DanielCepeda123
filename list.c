@@ -121,8 +121,9 @@ void * popCurrent(List * list) {
   Node *datoEliminado = list->current;
 
   Node *aux = firstList(list);
-
+  aux->prev = NULL;
   aux->next = list->current->next;
+  list->head = aux;
   
   return (datoEliminado->data);
 }
